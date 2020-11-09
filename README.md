@@ -1,6 +1,49 @@
-# Testlib1
+# absolute-table-pagination
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+
+Author: [Sathyaraj Kandasamy](https://sathya-me.netlify.app/)
+
+##Code Implementation
+You can install this package locally with npm.
+```js
+npm install absolute-table-pagination
+ ```
+##To install latest release and update package.json 
+npm install absolute-table-pagination --save
+ 
+##To import in the module
+```js
+import { AbsoluteTablePaginationModule } from 'absolute-table-pagination';
+
+@NgModule({
+  imports: [
+    AbsoluteTablePaginationModule
+  ]
+})
+```
+
+##Implement in HTML file
+```js
+<absolute-table-pagination  [data]="JsonData" [rowCount]="RowCount" (slicedData)="setTableData($event)"></absolute-table-pagination>
+```
+##Implement in TS file
+```js
+import { ChangeDetectorRef } from '@angular/core';
+
+export class AppComponent {
+    JsonData = [] //entire array of json data
+    RowCount = 10; //no of rows to be displayed in table
+    TableData : any; //to be binded with table for rows
+
+    constructor(private cref: ChangeDetectorRef) {}
+
+    setTableData(data: any) {
+        this.TableData = data; //sliced table data based on the page number selected
+        this.cref.detectChanges();
+    }
+}
+```
 
 ## Development server
 
