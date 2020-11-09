@@ -1,0 +1,46 @@
+@mixin font-method($font-size: 16px, $font-weight: normal, $line-height: 20px, $letter-spacing: 0.2px) {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+
+    &>li:first-child::after{
+        content : " Entries";
+    }
+}
+
+ul li {
+    list-style-type: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    @include font-method(16px, normal, 22px);
+    text-align: center;
+    color: #818194;
+    &.active {
+        background: #53caa6;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+    }
+}
+
+a {
+    cursor: pointer;
+}
+
+.left-arrow {
+    background: rgba(0, 0, 0, 0.65);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.pagination {
+    margin-right: 10vw;
+}

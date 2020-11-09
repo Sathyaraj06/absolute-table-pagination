@@ -1,0 +1,163 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+  title = 'absolute-table-pagination-app';
+
+  setTableData(data: any) {
+    //this.tempData = data;
+    //this.cref.detectChanges();
+    
+  }
+
+  data = [
+    {
+      "Book ID": "1",
+      "Book Name": "Computer Architecture",
+      "Category": "Computers",
+      "Price": "125.60"
+    },
+    {
+      "Book ID": "2",
+      "Book Name": "Asp.Net 4 Blue Book",
+      "Category": "Programming",
+      "Price": "56.00"
+    },
+    {
+      "Book ID": "3",
+      "Book Name": "Popular Science",
+      "Category": "Science",
+      "Price": "210.40"
+    },
+    {
+      "Book ID": "1",
+      "Book Name": "Computer Architecture",
+      "Category": "Computers",
+      "Price": "125.60"
+    },
+    {
+      "Book ID": "2",
+      "Book Name": "Asp.Net 4 Blue Book",
+      "Category": "Programming",
+      "Price": "56.00"
+    },
+    {
+      "Book ID": "3",
+      "Book Name": "Popular Science",
+      "Category": "Science",
+      "Price": "210.40"
+    },
+    {
+      "Book ID": "1",
+      "Book Name": "Computer Architecture",
+      "Category": "Computers",
+      "Price": "125.60"
+    },
+    {
+      "Book ID": "2",
+      "Book Name": "Asp.Net 4 Blue Book",
+      "Category": "Programming",
+      "Price": "56.00"
+    },
+    {
+      "Book ID": "3",
+      "Book Name": "Popular Science",
+      "Category": "Science",
+      "Price": "210.40"
+    },
+    {
+      "Book ID": "1",
+      "Book Name": "Computer Architecture",
+      "Category": "Computers",
+      "Price": "125.60"
+    },
+    {
+      "Book ID": "2",
+      "Book Name": "Asp.Net 4 Blue Book",
+      "Category": "Programming",
+      "Price": "56.00"
+    },
+    {
+      "Book ID": "3",
+      "Book Name": "Popular Science",
+      "Category": "Science",
+      "Price": "210.40"
+    },
+    {
+      "Book ID": "1",
+      "Book Name": "Computer Architecture",
+      "Category": "Computers",
+      "Price": "125.60"
+    },
+    {
+      "Book ID": "2",
+      "Book Name": "Asp.Net 4 Blue Book",
+      "Category": "Programming",
+      "Price": "56.00"
+    },
+    {
+      "Book ID": "3",
+      "Book Name": "Popular Science",
+      "Category": "Science",
+      "Price": "210.40"
+    },
+    {
+      "Book ID": "1",
+      "Book Name": "Computer Architecture",
+      "Category": "Computers",
+      "Price": "125.60"
+    },
+    {
+      "Book ID": "2",
+      "Book Name": "Asp.Net 4 Blue Book",
+      "Category": "Programming",
+      "Price": "56.00"
+    },
+    {
+      "Book ID": "3",
+      "Book Name": "Popular Science",
+      "Category": "Science",
+      "Price": "210.40"
+    },
+    {
+      "Book ID": "1",
+      "Book Name": "Computer Architecture",
+      "Category": "Computers",
+      "Price": "125.60"
+    },
+    {
+      "Book ID": "2",
+      "Book Name": "Asp.Net 4 Blue Book",
+      "Category": "Programming",
+      "Price": "56.00"
+    },
+    {
+      "Book ID": "3",
+      "Book Name": "Popular Science",
+      "Category": "Science",
+      "Price": "210.40"
+    },
+    {
+      "Book ID": "1",
+      "Book Name": "Computer Architecture",
+      "Category": "Computers",
+      "Price": "125.60"
+    },
+    {
+      "Book ID": "2",
+      "Book Name": "Asp.Net 4 Blue Book",
+      "Category": "Programming",
+      "Price": "56.00"
+    },
+    {
+      "Book ID": "3",
+      "Book Name": "Popular Science",
+      "Category": "Science",
+      "Price": "210.40"
+    }
+  ]
+}

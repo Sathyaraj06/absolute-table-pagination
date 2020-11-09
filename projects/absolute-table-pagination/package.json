@@ -1,0 +1,15 @@
+{
+  "name": "absolute-table-pagination",
+  "version": "2.6.0",
+  "peerDependencies": {
+    "@angular/common": "^10.1.6",
+    "@angular/core": "^10.1.6"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "description": "absolute-table-pagination",
+  "author": {
+    "name": "sathyaraj kandasamy"
+  }
+}
